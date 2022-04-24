@@ -1,0 +1,121 @@
+.header{
+    border-bottom: 1px solid #d0d7de;
+    display: flex;
+    margin: auto;
+    width: 26%;
+}
+.header a{
+    padding: 8px 40px;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--color-fg-default);
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.describe:hover{
+    border-bottom: 1px solid black !important;
+}
+.option{
+    vertical-align: text-bottom;
+    color:rgb(16, 151, 16)
+}
+.counter{
+    display: inline-block;
+    min-width: 16px;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: black;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 32px;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+.col-4{
+    width: 25%;
+}
+.col-8{
+    width: 75%;
+}
+.avatar{
+    width: 70%;
+    border-radius: 100%;
+}
+.username{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+.fullname{
+    margin: 12px 0px;
+    display: block;
+}
+.social{
+    display: flex;
+}
+.social div{
+    margin: 8px 30px;
+    font-size: 15px;
+    color: white;
+    padding: 2px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.bg-grey{
+background-color: grey;
+}
+.bg-blue{
+    background-color: rgb(0, 38, 255);
+}
+.bg-green{
+    background-color: rgb(98, 189, 98);
+}
+.bg-sky{
+    background-color: skyblue;
+}
+ol{
+    display: flex !important;
+    list-style: none !important;
+    margin-bottom: 24px !important;
+    flex-wrap: wrap !important;
+}
+li{
+    padding: 8px;
+    margin: 8px 10px;
+    font-size: 13px;
+    border:1px solid lightgrey;
+    border-radius: 2px;
+    height: 80px;
+}
+.para{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.public{
+    padding: 2px;
+    text-align: center;
+    width: 49px;
+    border: 1px solid lightgreen;
+    float: right;
+    border-radius: 13px;
+}
+.private{
+    padding: 2px;
+    text-align: center;
+    width: 49px;
+    border: 1px solid rgb(214, 128, 128);
+    float: right;
+    border-radius: 13px;
+}

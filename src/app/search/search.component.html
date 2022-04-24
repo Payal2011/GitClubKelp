@@ -1,0 +1,11 @@
+
+<form class="search" [formGroup]="formGroup" (ngSubmit)="search(formGroup.value.search)">
+    <input type="text" placeholder="Search git user" formControlName="search" [(ngModel)]="searchTerm" >
+    <button type="submit"><mat-icon>search</mat-icon></button>
+</form>
+<div *ngIf="userProfile && !userDoesNotExist" class="git-user-profile">
+    <app-git-profile [gitProfile]="userProfile" [gitRepos]="userRepository"></app-git-profile>
+</div>
+<div *ngIf="userDoesNotExist">
+    User Not Found
+</div>

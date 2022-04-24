@@ -1,0 +1,15 @@
+<div class="history">
+    <!-- <div class="col-3 history-options">
+        <div class="clear" (click)="clearHistory()">lear browsing data</div>
+    </div> -->
+    <div *ngIf="historicData" class="col-12 history-content">
+        <div class="history-container" *ngFor="let record of historicData| sortCreatedAt">
+            <input type="checkbox"/>
+            <span class="time">{{record.created_at | date:'dd:MM HH:mm'}}</span>
+            <a [href]="record.url">{{record.url}}</a>
+            <mat-icon class="delete" (click)="deleteRecord(record.id)">delete</mat-icon>
+            <mat-icon class="delete" title="not found" *ngIf="!record.success">visibility_off</mat-icon>
+            
+        </div>
+    </div>
+</div>
