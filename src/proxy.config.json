@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://json-server-qbrsg4--3000.local.webcontainer.io",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
