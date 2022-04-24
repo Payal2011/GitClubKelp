@@ -8,7 +8,7 @@ import { switchMap } from 'rxjs/operators';
 export class GitdataService {
   
   constructor(private http: HttpClient) { }
-  history = "https://json-server-qbrsg4--3000.local.webcontainer.io";
+  history = "https://json-server-qbrsg4--3000.local.webcontainer.io/history";
   url = "https://api.github.com/users/";
 
   getUserByTerm(term:any): Observable<any>{
