@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "backend":"json-server -w search_results.json"
+    "backend": "npx json-server -w search_results.json"
   },
   "private": true,
   "dependencies": {
